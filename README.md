@@ -3,7 +3,7 @@
 仕事の目的・予算・運用重視点から、先に比較すべきAIツールのカテゴリを整理する静的Webアプリです。
 
 - 広告なしでも診断機能が成立します。
-- `affiliate-config.js` は初期状態で空です。
+- `affiliate-config.js` は承認済みプログラムのみ有効化します。
 - 提携済み・掲載可能な広告だけ、明示付きで追加する前提です。
 - 特定サービスの性能や成果を保証しません。
 
@@ -14,3 +14,7 @@
 
 ## Affiliate policy
 The tool stays useful without affiliate links. Only approved programs may be enabled, with clear disclosure. Unapproved services use normal official links or no link.
+
+
+## Current monetization
+承認済みプログラムだけを広告表記付きで有効化します。診断・チェック機能は広告リンクなしでも利用できます。
