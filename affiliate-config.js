@@ -11,7 +11,7 @@ window.AFFILIATE_OFFERS = [
   },
   {
     "name": "ConoHa AI Canvas",
-    "url": "https://px.a8.net/svt/ejp?a8mat=4BAH9L+A6R1F6+50+7RZINL",
+    "url": "https://px.a8.net/svt/ejp?a8mat=4BAH9L+A6R1F6+50+7RTY1E",
     "tags": [
       "design"
     ],
