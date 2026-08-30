@@ -5,8 +5,13 @@
 - 広告なしでも診断機能が成立します。
 - `affiliate-config.js` は承認済みプログラムのみ有効化します。
 - 提携済み・掲載可能な広告だけ、明示付きで追加する前提です。
+- 有効化された広告URLも `http` / `https` 以外は表示せず、名称・URL属性はHTMLエスケープします。
 - 特定サービスの性能や成果を保証しません。
 - [ルーティング規則と回帰テスト](docs/routing-contract.md)
+
+## Affiliate rendering boundary
+
+`affiliate-config.js` は内部設定ですが、公開HTMLへ描画する時にもfail-closedにします。`javascript:` 等の非HTTP(S) URLは候補から除外し、広告名と `href` はHTMLとして解釈されないようescapeします。広告の有無や設定値はルーティング判定そのものには影響しません。
 
 ## 収益化ポリシー
 
