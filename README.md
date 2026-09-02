@@ -9,6 +9,15 @@
 - 特定サービスの性能や成果を保証しません。
 - [ルーティング規則と回帰テスト](docs/routing-contract.md)
 
+## Local validation
+
+```bash
+node --check app.js
+node tests/test_routing.js
+```
+
+現在の回帰suiteはルーティング45ケースに加えて、affiliate URLのscheme制限とHTML escape境界も確認します。
+
 ## Affiliate rendering boundary
 
 `affiliate-config.js` は内部設定ですが、公開HTMLへ描画する時にもfail-closedにします。`javascript:` 等の非HTTP(S) URLは候補から除外し、広告名と `href` はHTMLとして解釈されないようescapeします。広告の有無や設定値はルーティング判定そのものには影響しません。
