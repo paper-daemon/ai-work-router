@@ -10,7 +10,7 @@ const expected={
   write:['文章生成','SEO支援','校正・要約'],
   meeting:['文字起こし','議事録','ナレッジ整理'],
   design:['画像生成','資料作成','デザイン'],
-  agent:['AIエージェント','自動化','API連携'],
+  agent:['SIエージェント','自動化','API連携'],
   learn:['講座','実践教材','学習コミュニティ']
 };
 const budgets=['free','small','pro'];
