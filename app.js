@@ -1,7 +1,7 @@
 function recordUsage(label){try{const k='amase_usage_ai_work_router';const d=JSON.parse(localStorage.getItem(k)||'{"total":0,"labels":{}}');d.total++;d.labels[label]=(d.labels[label]||0)+1;localStorage.setItem(k,JSON.stringify(d));}catch(e){}}
 function escHtml(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function safeOfferUrl(value){try{const u=new URL(String(value||''),globalThis.location?.href||'https://example.invalid/');return ['http:','https:'].includes(u.protocol)?u.href:''}catch{return ''}}
-const map={write:['文章生成','SEO支援','校正・要約'],meeting:['文字起こし','議事録','ナレッジ整理'],design:['画像生成','資料作成','デザイン'],agent:['AIエージェント','自動化','API連携'],learn:['講座','実践教材','学習コミュニティ']};
+const map={write:['文章生成','SEO支援','校正・要約'],meeting:['文字起こし','議事録','ナレッジ整理'],design:['画像生成','資料作成','デザイン'],agent:['SIエージェント','自動化','API連携'],learn:['講座','実践教材','学習コミュニティ']};
 const hints={free:'無料枠で入力と出力の癖を確認してから課金候補を絞る。',small:'月額と使用量上限を比べて、毎月使う工程だけ有料化する。',pro:'権限管理・ログ・データ持ち出し条件も比較対象に入れる。'};
 const priorityHints={easy:'初期設定の少なさを優先。',control:'API・エクスポート可否を優先。',team:'共有・権限・履歴を優先。'};
 function routeFor(goal,budget,priority){
